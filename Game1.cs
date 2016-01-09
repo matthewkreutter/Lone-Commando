@@ -65,8 +65,8 @@ namespace Game1
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            this.graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width/2;
-            this.graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height/2;
+            this.graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2;
+            this.graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2;
             //this.graphics.IsFullScreen = true;
         }
         protected override void Initialize()
@@ -77,8 +77,8 @@ namespace Game1
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            Screen_Width = graphics.GraphicsDevice.Viewport.Width/2;
-            Screen_Height = graphics.GraphicsDevice.Viewport.Height/2;
+            Screen_Width = graphics.GraphicsDevice.Viewport.Width / 2;
+            Screen_Height = graphics.GraphicsDevice.Viewport.Height / 2;
             if (Draw_Background == true)
             {
                 Background_Texture = Content.Load<Texture2D>("Grass_Background2");
