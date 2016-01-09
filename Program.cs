@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Game1
+namespace Shooter
 {
 #if WINDOWS || LINUX
     public static class Program
