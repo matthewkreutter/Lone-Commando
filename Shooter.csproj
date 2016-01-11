@@ -162,6 +162,9 @@
     <Content Include="Content\Shield_Final.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\shooterSS.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Tree1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
