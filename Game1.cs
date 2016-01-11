@@ -65,9 +65,9 @@ namespace Shooter
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            this.graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2;
-            this.graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2;
-            //this.graphics.IsFullScreen = true;
+            graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+            this.graphics.IsFullScreen = true;
         }
         protected override void Initialize()
         {
@@ -77,8 +77,8 @@ namespace Shooter
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            Screen_Width = graphics.GraphicsDevice.Viewport.Width / 2;
-            Screen_Height = graphics.GraphicsDevice.Viewport.Height / 2;
+            Screen_Width = graphics.GraphicsDevice.Viewport.Width;
+            Screen_Height = graphics.GraphicsDevice.Viewport.Height;
             if (Draw_Background == true)
             {
                 Background_Texture = Content.Load<Texture2D>("Grass_Background2");
@@ -86,7 +86,7 @@ namespace Shooter
             Screen_Rectangle = new Rectangle(0, 0, Screen_Width, Screen_Height);
 
             Hud = new HUD();
-            Hud.Font = Content.Load<SpriteFont>("Arial");
+            Hud.Font = Content.Load<SpriteFont>("gameFont");
             Hud.Lives = 3;
             Hud.Score = 0;
             Hud.Wave = 0;
@@ -181,7 +181,7 @@ namespace Shooter
             //Menu_Background = Content.Load<Texture2D>("Menu_Background"); 
             Menu_Background = Content.Load<Texture2D>("Grass_Background2");
             Texture2D Help = Content.Load<Texture2D>("Help");
-            Menu = new Menu(Content.Load<SpriteFont>("Arial"), graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height, Crosshair_Final, Help);
+            Menu = new Menu(Content.Load<SpriteFont>("gameFont"), graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height, Crosshair_Final, Help);
 
             GameOver_Background = Content.Load<Texture2D>("Game_Over_Screen");
 

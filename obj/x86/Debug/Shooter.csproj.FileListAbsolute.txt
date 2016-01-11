@@ -59,4 +59,4 @@ C:\Users\Matthew\Documents\Visual Studio 2015\Projects\Shooter\Shooter\bin\Windo
 C:\Users\Matthew\Documents\Visual Studio 2015\Projects\Shooter\Shooter\bin\Windows\Debug\Content\Powerup_Speed.png
 C:\Users\Matthew\Documents\Visual Studio 2015\Projects\Shooter\Shooter\bin\Windows\Debug\Content\Shield_Final.png
 C:\Users\Matthew\Documents\Visual Studio 2015\Projects\Shooter\Shooter\bin\Windows\Debug\Content\Tree1.png
-C:\Users\Matthew\Documents\Visual Studio 2015\Projects\Shooter\Shooter\bin\Windows\Debug\Content\Arial.spritefont
+C:\Users\Matthew\Documents\Visual Studio 2015\Projects\Shooter\Shooter\bin\Windows\Debug\Content\gameFont.xnb
