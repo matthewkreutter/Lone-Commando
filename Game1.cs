@@ -18,7 +18,7 @@ namespace Shooter
         private Texture2D Background_Texture, GameOver_Background;
         private Rectangle Screen_Rectangle;
 
-        private bool Dev_Mode = true;
+        private bool Dev_Mode = false;
 
         private Texture2D Tree1;
         private Vector2 Tree_Position1, Tree_Position2, Tree_Position3, Tree_Position4;
@@ -65,9 +65,10 @@ namespace Shooter
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width - 500;
-            graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height - 200;
-            //graphics.IsFullScreen = true;
+            graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+            graphics.IsFullScreen = true;
+            graphics.ApplyChanges();
         }
         protected override void Initialize()
         {
@@ -194,7 +195,7 @@ namespace Shooter
         {
             if (GameState == "Quit")
             {
-                this.Exit();
+                Environment.Exit(0);
             }
             UpdateInput();
             if (GameState == "Game")
